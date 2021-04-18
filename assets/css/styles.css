@@ -51,10 +51,22 @@ nav li a {
   color: var(--textColor);
   font-weight: 500;
 }
+nav li a {
+  font-size: .8rem;
+  color: var(--textColor);
+  font-weight: 500;
+}
+nav label {
+  font-size: 2rem;
+  display: none;
+}
 
 /* Mobile Nav */
 #toggle-nav {
   display: none;
+}
+#toggle-nav:checked ~ .mobile-nav {
+  right: 0;
 }
 .mobile-nav {
   position: fixed;
@@ -70,7 +82,7 @@ nav li a {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: 1rem 1rem;
+  padding: 1rem 1.5rem;
 }
 .close-btn label {
   font-size: 2rem;
@@ -142,7 +154,7 @@ nav li a {
 .search-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 2rem;
+  grid-gap: 2rem;
 }
 
 .arrival-section {
@@ -254,7 +266,7 @@ font-size: 2.1rem;
 .promo-grid {
   display: grid;
   grid-template-columns: 40% 30% 30%;
-  grid-column-gap: 2rem;
+  grid-gap: 2rem;
   align-items: center;
 }
 .promo-section .wrapper {
@@ -290,7 +302,7 @@ font-size: 2.1rem;
 .promo-2 .wrapper {
   display: flex;
   grid-template-columns: 40% 60%;
-  grid-column-gap: 2rem;
+  grid-gap: 2rem;
 }
 .promo-2 .promo-banner-text h2 {
   margin-bottom: 1rem;
@@ -391,4 +403,53 @@ footer {
 }
 .footer-form input {
   flex: 1;
+}
+
+/* Product page */
+.product-header {
+  background: var(--accentColor);
+  padding: 3rem 0rem 6rem 0rem;
+  text-align: center;
+}
+.product-header .breadcrumb,
+.product-header .breadcrumb a {
+  font-size: .8rem;
+  color: var(--textColor);
+}
+.product-header .breadcrumb span {
+  color: var(--primaryColor);
+}
+.product-header h1 {
+  color: #444;
+  margin: .7rem 0rem;
+}
+.product-header h3 {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+}
+.product-header ion-icon {
+  color: var(--primaryColor);
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  nav label {
+    display: inline-block;
+  }
+  .search-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .promo-grid,
+  .promo-2 .wrapper {
+    grid-template-columns: 100%;
+  }
+  .features-grid,
+  .brands-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-grid {
+    grid-template-columns: 100%;
+  }
 }
