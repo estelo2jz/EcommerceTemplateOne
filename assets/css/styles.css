@@ -425,10 +425,15 @@ footer {
 }
 .product-header h3 {
   font-size: 1.5rem;
-  color: var(--primaryColor);
+  color: var(--primaryColor);   
+  margin-bottom: 1.1rem;
+
 }
 .product-header ion-icon {
   color: var(--primaryColor);
+  font-size: 1.3rem;
+  display: inline-block;
+  margin: 0rem .5rem;
 }
 
 @media only screen and (max-width: 768px) {
