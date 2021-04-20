@@ -408,7 +408,7 @@ footer {
 /* Product page */
 .product-header {
   background: var(--accentColor);
-  padding: 3rem 0rem 6rem 0rem;
+  padding: 3rem 0rem 7rem 0rem;
   text-align: center;
 }
 .product-header .breadcrumb,
@@ -434,6 +434,108 @@ footer {
   font-size: 1.3rem;
   display: inline-block;
   margin: 0rem .5rem;
+}
+.product-body {
+  padding-bottom: 3rem;
+}
+.product-body .wrapper {
+  background: var(--backgroundColor);
+  /* margin-top: -4rem; */
+}
+.product-body-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.product-photo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  background-position: center;
+}
+.product-details {
+  padding: 2rem 1rem;
+}
+.size-wrapper {
+  display: flex;
+  margin-bottom: 1.2rem;
+}
+.product-size small {
+  font-size: .8rem;
+  font-weight: 700;
+  color: #333;
+  display: inline-block;
+  margin-bottom: .6rem;
+}
+.size-wrapper label {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.size-wrapper input[type=radio] {
+  display: none;
+}
+.size-wrapper span {
+  font-size: .8rem;
+  font-weight: 700;
+  padding: .2rem .7rem;
+  color: var(--textColor);
+  border: 1px solid #ccc;
+}
+.size-wrapper input[type=radio]:checked + span {
+  border: 1px solid var(--primaryColor);
+}
+.product-controls {
+  display: flex;
+  justify-content: space-between;
+}
+.product-update-btn {
+  display: flex;
+  align-items: center;
+}
+.product-update-btn input {
+  height: 30px;
+  width: 40px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 0rem .4rem;
+  text-align: center;
+}
+.product-update-btn button {
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primaryColor);
+}
+.product-description {
+  margin-top: 2rem;
+}
+.product-description h5 {
+  color: var(--primaryColor);
+  margin-bottom: .8rem;
+}
+.product-full-desc h1,
+.product-full-desc h2,
+.product-full-desc h3,
+.product-full-desc h4,
+.product-full-desc h5 {
+  color: #333 !important;
+  margin-bottom: .8rem;
+  font-size: .9rem;
+}
+.product-full-desc p {
+  margin-bottom: .8rem;
+}
+.product-full-desc p,
+.product-full-desc li {
+  font-size: .85rem !important;
+  line-height: 1.7rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: .8rem;
 }
 
 @media only screen and (max-width: 768px) {
